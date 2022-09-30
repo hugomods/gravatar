@@ -35,6 +35,8 @@ See [configuration](https://github.com/razonyang/hugo-mod-gravatar/blob/main/con
 | `gravatar/avatar-hash` | renders a Gravatar image by a MD5 encrypted email address hash. | `{{ partial "gravatar/avatar-hash" "e7501ec2b3cd95d6af8964743c1d27c7" }}`
 | `gravatar/avatar-params` | allow specifying the default image, image size, rating and class name. | `{{ partial "gravatar/avatar-params" $params }}`, see [partials' parameters](#partials-parameters).
 
+You can find more examples on https://razonyang.github.io/hugo-mod-gravatar/.
+
 ### Partials' Parameters
 
 > The following parameters will override the global parameters if present.
