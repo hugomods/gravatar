@@ -4,6 +4,8 @@ This module ships with a several partials for [Gravatar](https://en.gravatar.com
 
 ## Installation
 
+> Requires extended Hugo and Go.
+
 Append the `github.com/razonyang/hugo-mod-gravatar` to the `theme`.
 
 ```toml
