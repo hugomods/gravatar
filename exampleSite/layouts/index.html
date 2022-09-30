@@ -137,6 +137,18 @@
             >
           </td>
         </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-url" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "Size" 120) }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %d) }}"
+              "gravatar/avatar-url" "Id" "e7501ec2b3cd95d6af8964743c1d27c7"
+              "Size" 120 }}</code
+            >
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
