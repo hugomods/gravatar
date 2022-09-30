@@ -65,6 +65,14 @@
             </tr>
             <tr>
                 <td>
+                    {{ partial "gravatar/avatar-params" (dict "Id" "invalid-email-hash" "Default" "https://razonyang.com/images/logo.webp") }}
+                </td>
+                <td>
+                    <code>{{ printf "{{ partial %q (dict %q %q %q %q) }}" "gravatar/avatar-params" "Id" "invalid-email-hash" "Default" "https://razonyang.com/images/logo.webp" }}</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     {{ partial "gravatar/avatar-params" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "Size" 120) }}
                 </td>
                 <td>
