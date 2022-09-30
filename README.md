@@ -1,6 +1,6 @@
 # Hugo Gravatar Module
 
-This module ships with a serveral partials for [Gravatar](https://en.gravatar.com/).
+This module ships with a several partials for [Gravatar](https://en.gravatar.com/).
 
 ## Installation
 
