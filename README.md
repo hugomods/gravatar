@@ -36,7 +36,7 @@ See [configuration](https://github.com/razonyang/hugo-mod-gravatar/blob/main/con
 | `gravatar/avatar-params` | allow specifying the default image, image size, rating and class name. | `{{ partial "gravatar/avatar-params" $params }}`, see [partials' parameters](#partials-parameters).
 | `gravatar/avatar-url` | returns the Gravatar image URL instead of img tag. | `{{ partial "gravatar/avatar-url" $params }}`, see [partials' parameters](#partials-parameters).
 
-You can find more examples on https://razonyang.github.io/hugo-mod-gravatar/.
+You can find more examples on https://projects.razonyang.com/hugo-mod-gravatar/.
 
 ### Partials' Parameters
 
