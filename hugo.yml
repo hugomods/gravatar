@@ -1,3 +1,7 @@
+module:
+  hugoVersion:
+    min: '0.110.0'
+
 params:
   gravatar:
     # Default image. Available optiopns:
