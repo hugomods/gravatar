@@ -1,0 +1,24 @@
+{{- $params := slice }}
+{{- with default (default 80 site.Params.gravatar.size) .Size }}
+  {{- $params = $params | append "s" . }}
+{{- end }}
+{{- with default (default "mp" site.Params.gravatar.default) .Default }}
+  {{- $params = $params | append "d" . }}
+{{- end }}
+{{- if default (default false site.Params.gravatar.forceDefault) .ForceDefault }}
+  {{- $params = $params | append "f" "y" }}
+{{- end }}
+{{- with default (default "" site.Params.gravatar.rating) .Rating }}
+  {{- $params = $params | append "r" . }}
+{{- end }}
+{{- $id := "" }}
+{{- with .Email }}
+  {{- $id = trim . " " | lower | md5 }}
+{{- else }}
+  {{- $id = .Id }}
+{{- end }}
+{{- $url := printf "https://www.gravatar.com/avatar/%s" $id }}
+{{- with $params }}
+  {{- $url = printf "%s?%s" $url (querify .) }}
+{{- end }}
+{{- return $url }}

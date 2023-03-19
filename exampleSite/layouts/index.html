@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <title>Hugo Gravatar Module</title>
+    <style>
+      th, td {
+        padding: 0.5rem;
+        text-align: center;
+        border: 1px solid gray;
+      }
+
+      code {
+        background: gray;
+        color: white;
+        padding: 0.25rem 0.5rem;
+        user-select: all;
+      }
+
+      .avatar-img-circle {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://github.com/hugomods/gravatar">Hugo Gravatar Module</a></h1>
+    <h2>Examples</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar" "user@example.com" }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q %q }}" "gravatar/avatar"
+              "user@example.com" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-hash" "e7501ec2b3cd95d6af8964743c1d27c7" }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q %q }}" "gravatar/avatar-hash"
+              "e7501ec2b3cd95d6af8964743c1d27c7" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Email" "invalid-email" "Default" "identicon") }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %q) }}"
+              "gravatar/avatar-params" "Email" "invalid-email" "Default"
+              "identicon" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Id" "invalid-email-hash" "Default" "monsterid") }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %q) }}"
+              "gravatar/avatar-params" "Id" "invalid-email-hash" "Default"
+              "monsterid" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Id" "invalid-email-hash" "Default" "https://razonyang.com/images/logo.webp") }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %q) }}"
+              "gravatar/avatar-params" "Id" "invalid-email-hash" "Default"
+              "https://razonyang.com/images/logo.webp" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "Size" 120) }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %d) }}"
+              "gravatar/avatar-params" "Id" "e7501ec2b3cd95d6af8964743c1d27c7"
+              "Size" 120 }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "ForceDefault" true) }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %t) }}"
+              "gravatar/avatar-params" "Id" "e7501ec2b3cd95d6af8964743c1d27c7"
+              "ForceDefault" true }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "Rating" "x") }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %q) }}"
+              "gravatar/avatar-params" "Id" "e7501ec2b3cd95d6af8964743c1d27c7"
+              "Rating" "x" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-params" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "ClassName" "avatar-img-circle") }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %q) }}"
+              "gravatar/avatar-params" "Id" "e7501ec2b3cd95d6af8964743c1d27c7"
+              "ClassName" "avatar-img-circle" }}</code
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {{ partial "gravatar/avatar-url" (dict "Id" "e7501ec2b3cd95d6af8964743c1d27c7" "Size" 120) }}
+          </td>
+          <td>
+            <code
+              >{{ printf "{{ partial %q (dict %q %q %q %d) }}"
+              "gravatar/avatar-url" "Id" "e7501ec2b3cd95d6af8964743c1d27c7"
+              "Size" 120 }}</code
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

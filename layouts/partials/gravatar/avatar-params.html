@@ -1,0 +1,7 @@
+{{- $className := default (default "gravatar-img" site.Params.gravatar.className) .ClassName }}
+{{- $url := partial "gravatar/avatar-url" . }}
+<img
+  class="{{ $className }}"
+  {{ with .Size }}height="{{ . }}" width="{{ . }}"{{ end }}
+  src="{{ $url }}"
+/>
