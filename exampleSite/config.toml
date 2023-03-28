@@ -1,4 +1,3 @@
 title = 'Hugo Gravatar Module'
-theme = [
-    "github.com/hugomods/gravatar"
-]
+[[module.imports]]
+path = "github.com/hugomods/gravatar"
