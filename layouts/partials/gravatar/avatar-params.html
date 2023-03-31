@@ -3,5 +3,6 @@
 <img
   class="{{ $className }}"
   {{ with .Size }}height="{{ . }}" width="{{ . }}"{{ end }}
+  loading="lazy"
   src="{{ $url }}"
 />
