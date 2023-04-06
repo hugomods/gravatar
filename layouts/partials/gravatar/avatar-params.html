@@ -3,6 +3,7 @@
 <img
   class="{{ $className }}"
   {{ with .Size }}height="{{ . }}" width="{{ . }}"{{ end }}
+  {{ with default "Avatar" .Alt }}alt="{{ . }}"{{ end }}
   loading="lazy"
   src="{{ $url }}"
 />
