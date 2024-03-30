@@ -5,4 +5,4 @@
 [![License](https://img.shields.io/github/license/hugomods/gravatar?style=flat-square)](https://github.com/hugomods/gravatar/blob/main/LICENSE)
 [![Version](https://img.shields.io/github/v/tag/hugomods/gravatar?label=version&style=flat-square)](https://github.com/hugomods/gravatar/tags)
 
-This module ships with several partials for [Gravatar](https://en.gravatar.com/), read more on [documentations](https://hugomods.com/en/docs/gravatar/).
+This module ships with several partials for [Gravatar](https://en.gravatar.com/), read more on [documentation](https://hugomods.com/en/docs/gravatar/).
